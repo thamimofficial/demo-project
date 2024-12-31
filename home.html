@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default" style="background-color: white; border: none;">
+          <div class="container">
+            <!-- Logo and Navbar Toggle Button (for mobile view) -->
+            <div class="navbar-header">
+              <!-- Logo aligned to the left -->
+              <a class="navbar-brand" href="#">
+                <img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600" alt="logo image" width="150" height="70"/>
+              </a>
+              <!-- Navbar Toggle Button for Mobile -->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+      
+            <!-- Navbar Links (collapse for mobile view) -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">eMACH.ai</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Platforms</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Insights</a></li>
+                <li><a href="#">Design Thinking</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+<hr>
+
+
+<div class="first-container" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box;">
+  <div class='mydiv'>
+    <h1 style="background-color: #d7d6fe; font-weight: 900; text-align: center;">Our Superpower is our people</h1>
+    <p style="background-color: #d7d6fe; text-align: center;">Innovation starts with ideas, and that's what builders are good at--thinking big, raising the bar, and changing the world. If you're looking for a place</p>
+    
+    <form class="formstyle" style="display: flex; flex-direction: column; justify-content: center; gap: 30px; background-color: #b8b6de; padding: 20px; border-radius: 10px; width: 100%; box-sizing: border-box;">
+      <input type="text" placeholder="Senior Graphic Design" style="height: 30px; border-radius: 10px; width: 100%; padding: 5px; box-sizing: border-box;"/>
+      <select style="height: 30px; border-radius: 10px; width: 100%; padding: 5px; box-sizing: border-box;">
+        <option value="chennai, india">Chennai, India</option>
+        <option value="gujarat, india">Gujarat, India</option>
+      </select>
+      <button type="submit" style="background-color: #307bb4; color: white; height: 40px; border-radius: 10px; width: 100%;">Search</button>
+    </form>
+  </div>
+
+  <div class="img-div" >
+    <img style="border-radius: 20px; width: 100%; height: auto;" src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&cs=tinysrgb&w=600" />
+  </div>
+</div>
+
+<!-- Inline CSS for mobile responsiveness -->
+<style>
+    .img-div{flex: 1; width: 50%;  box-sizing: border-box; border-radius: 20px;}
+    .mydiv{margin-left: 100px; margin-right: 100px; background-color: #d7d6fe; flex: 1; width: 50%; padding: 20px; box-sizing: border-box;}
+  @media screen and (max-width: 768px) {
+    .first-container {
+      flex-direction: column; /* Stack the content in a column on mobile */
+      align-items: center;
+    }
+   
+    .mydiv{
+        width: 0; /* Make each section take full width */
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .first-container > div {
+      width: 100%; /* Make each section take full width */
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .formstyle {
+      width: 100%; /* Make the form take full width */
+    }
+
+    img {
+      width: 100%; /* Make the image take full width */
+    }
+
+    h1, p {
+      text-align: center; /* Ensure the text is centered on mobile */
+      width: 100%; /* Ensure full width for text */
+    }
+    .img-div{flex: 1; width: 100%;  box-sizing: border-box; border-radius: 20px;}
+  }
+</style>
+
+  
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <!-- <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol> -->
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <!-- First slide -->
+        <div class="item active">
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; margin: 20px;">
+                <img class="img-scroll" src="https://tse2.mm.bing.net/th?id=OIP.l2e1GPN32-B6Ac_EWE78nwAAAA&pid=Api&P=0&h=220" alt="Image 1" style="margin: 10px;">
+                <img class="img-scroll" src="https://tse2.mm.bing.net/th?id=OIP.l2e1GPN32-B6Ac_EWE78nwAAAA&pid=Api&P=0&h=220" alt="Image 2" style="margin: 10px;">
+                <img class="img-scroll" src="https://tse2.mm.bing.net/th?id=OIP.l2e1GPN32-B6Ac_EWE78nwAAAA&pid=Api&P=0&h=220" alt="Image 3" style="margin: 10px;">
+                <img class="img-scroll" src="https://tse2.mm.bing.net/th?id=OIP.l2e1GPN32-B6Ac_EWE78nwAAAA&pid=Api&P=0&h=220" alt="Image 4" style="margin: 10px;">
+            </div>
+        </div>
+        <!-- Second slide -->
+        <div class="item">
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; margin: 20px;">
+                <img class="img-scroll" src="https://tse2.mm.bing.net/th?id=OIP.l2e1GPN32-B6Ac_EWE78nwAAAA&pid=Api&P=0&h=220" alt="Image 5" style="margin: 10px;">
+                <img class="img-scroll" src="https://tse2.mm.bing.net/th?id=OIP.l2e1GPN32-B6Ac_EWE78nwAAAA&pid=Api&P=0&h=220" alt="Image 6" style="margin: 10px;">
+                <img class="img-scroll" src="https://tse2.mm.bing.net/th?id=OIP.l2e1GPN32-B6Ac_EWE78nwAAAA&pid=Api&P=0&h=220" alt="Image 7" style="margin: 10px;">
+                <img class="img-scroll" src="https://tse2.mm.bing.net/th?id=OIP.l2e1GPN32-B6Ac_EWE78nwAAAA&pid=Api&P=0&h=220" alt="Image 8" style="margin: 10px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a href="#myCarousel" data-slide="prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%);">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a href="#myCarousel" data-slide="next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%);">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Inline CSS for responsiveness -->
+<style>
+    /* For mobile: One image per row */
+    @media screen and (max-width: 768px) {
+        .carousel-inner .item div {
+            display: flex;
+            flex-wrap: nowrap; /* Prevent wrapping */
+            flex-direction: column; /* Stack images vertically */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .carousel-inner .item img {
+            width: 90%; /* Full width of container */
+            max-width: 300px;
+            height: auto;
+            margin: 10px auto;
+        }
+    }
+
+    /* For desktop: Four images per row */
+    @media screen and (min-width: 769px) {
+        .carousel-inner .item div {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping */
+            justify-content: center;
+        }
+
+        .carousel-inner .item img {
+            width: 22%; /* Four images per row */
+            max-width: 300px;
+            height: auto;
+            margin: 10px;
+        }
+    }
+</style>
+
+
+
+
+
+
+
+
+<div style="padding: 30px; background-color: #d8d7ff;">
+    <div class="card-container" style="background-color: #d8d7ff; width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between;">
+      <!-- Row 1 -->
+      <div class="card">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.BZDN5jtCETHvCmYtgEV8eAHaHa&pid=Api" alt="icons" width="50" height="50" />
+          <h3 class="h3">Bussiness Development </h3>
+      </div>
+  
+      <div class="card">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.BZDN5jtCETHvCmYtgEV8eAHaHa&pid=Api" alt="icons" width="50" height="50" />
+          <h3 class="h3">Website Development </h3>
+      </div>
+  
+      <div class="card">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.BZDN5jtCETHvCmYtgEV8eAHaHa&pid=Api" alt="icons" width="50" height="50" />
+          <h3 class="h3">App Development </h3>
+      </div>
+  
+      <div class="card">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.BZDN5jtCETHvCmYtgEV8eAHaHa&pid=Api" alt="icons" width="50" height="50"/>
+          <h3 class="h3">Digital Marketing </h3>
+      </div>
+    </div>
+  
+    <!-- Repeat card-container for other rows as needed -->
+    <div class="card-container" style="background-color: #d8d7ff; width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between;">
+      <!-- Row 2 -->
+      <div class="card">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.BZDN5jtCETHvCmYtgEV8eAHaHa&pid=Api" alt="icons" width="50" height="50" />
+          <h3 class="h3">Bussiness Development </h3>
+      </div>
+  
+      <div class="card">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.BZDN5jtCETHvCmYtgEV8eAHaHa&pid=Api" alt="icons" width="50" height="50" />
+          <h3 class="h3">Website Development </h3>
+      </div>
+  
+      <div class="card">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.BZDN5jtCETHvCmYtgEV8eAHaHa&pid=Api" alt="icons" width="50" height="50"/>
+          <h3 class="h3">App Development </h3>
+      </div>
+  
+      <div class="card">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.BZDN5jtCETHvCmYtgEV8eAHaHa&pid=Api" alt="icons" width="50" height="50" />
+          <h3 class="h3">Digital Marketing </h3>
+      </div>
+    </div>
+  
+    <!-- Repeat card-container for more rows -->
+    <div class="card-container" style="background-color: #d8d7ff; width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between;">
+      <!-- Row 3 -->
+      <div class="card">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.BZDN5jtCETHvCmYtgEV8eAHaHa&pid=Api" alt="icons" width="50" height="50" />
+          <h3 class="h3">Bussiness Development </h3>
+      </div>
+  
+      <div class="card">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.BZDN5jtCETHvCmYtgEV8eAHaHa&pid=Api" alt="icons" width="50" height="50" />
+          <h3 class="h3">Website Development </h3>
+      </div>
+  
+      <div class="card">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.BZDN5jtCETHvCmYtgEV8eAHaHa&pid=Api" alt="icons" width="50" height="50"/>
+          <h3 class="h3">App Development </h3>
+      </div>
+  
+      <div class="card">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.BZDN5jtCETHvCmYtgEV8eAHaHa&pid=Api" alt="icons" width="50" height="50" />
+          <h3 class="h3">Digital Marketing </h3>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Inline CSS for responsiveness -->
+  <style>
+      /* Mobile view: One card per row */
+      @media screen and (max-width: 768px) {
+          .card-container .card {
+              width: 100%;  /* Full width for each card */
+              margin: 10px 0; /* Margin between cards */
+          }
+  
+          .card-container img {
+              margin: 0 auto;
+          }
+      }
+  
+      /* Desktop view: Four cards per row */
+      @media screen and (min-width: 769px) {
+          .card-container .card {
+              width: 22%;  /* Four cards per row */
+              margin: 10px;
+          }
+  
+          .card-container img {
+              margin: 0 auto;
+          }
+      }
+  </style>
+  
+
+
+
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; padding: 20px;">
+  <!-- Google Map -->
+  <div style="flex: 1; min-width: 300px;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42177898468149!3d37.77492977975967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f3b12345%3A0xc1f9a1234567890a!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sin!4v1687351959932!5m2!1sen!2sin"
+      width="100%"
+      height="400"
+      style="border: 0; border-radius: 10px;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+
+  <!-- Form -->
+  <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 15px;">
+    <!-- First Row: First Name and Last Name -->
+    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+      <input
+        type="text"
+        placeholder="First Name"
+        style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"
+      />
+      <input
+        type="text"
+        placeholder="Last Name"
+        style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"
+      />
+    </div>
+
+    <!-- Second Row: Email and Phone Number -->
+    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+      <input
+        type="email"
+        placeholder="Email Address"
+        style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"
+      />
+      <input
+        type="tel"
+        placeholder="Phone Number"
+        style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"
+      />
+    </div>
+
+    <!-- Third Row: Address -->
+    <textarea
+      placeholder="Address"
+      style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; resize: none; height: 100px;"
+    ></textarea>
+
+    <!-- Submit Button -->
+    <button
+      type="submit"
+      style="padding: 10px; border-radius: 5px; background-color: #307bb4; color: white; border: none; font-size: 16px; cursor: pointer;"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+
+<!-- Responsive Design -->
+<style>
+  @media (max-width: 768px) {
+    input,
+    textarea,
+    button {
+      width: 100% !important;
+    }
+
+    div[style*="display: flex;"] {
+      flex-direction: column !important;
+    }
+  }
+</style>
+
+
+
+<div style="text-align: center; background-color: #f4f5fa; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); max-width: 800px; width: 100%; margin: auto;">
+    <h1 style="font-size: 24px; color: #333; margin-bottom: 1rem;  background-color: #f4f5fa;">What people are saying</h1>
+    <div style=" background-color: #f4f5fa; padding: 2rem; border-radius: 10px; position: relative;">
+      <p style="font-size: 16px; line-height: 1.5; color: #555; margin: 0;  background-color: #f4f5fa;">
+        “Extremely supportive and management always stays approachable. 
+        They encourage and motivate us to develop leadership abilities. 
+        Your work is rewarded and recognized.”
+      </p>
+      <div style="margin-top: 1.5rem; display: flex; align-items: center; justify-content: center;  background-color: #f4f5fa;">
+        <div style="width: 40px; height: 40px; background-color: #000000; border-radius: 50%; margin-right: 1rem;"></div>
+        <div style="text-align: left;  background-color: #f4f5fa;">
+          <p style="font-size: 14px; font-weight: bold; color: #333; margin: 0;  background-color: #f4f5fa;">Angela Karamoy</p>
+          <p style="font-size: 12px; color: #777; margin: 0;  background-color: #f4f5fa;">Team Lead</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div style="background-color: #003366; color: white; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; font-size: 14px; margin-top: 30px;">
+    <span style="background-color: #003366;">&copy; Intellect Design Arena Ltd, 2024</span>
+    <div style="display: flex; gap: 20px; background-color: #003366;">
+      <a href="#" style="color: white; text-decoration: none; background-color: #003366;">Disclaimer</a>
+      <a href="#" style="color: white; text-decoration: none; background-color: #003366;">Online Privacy</a>
+      <a href="#" style="color: white; text-decoration: none; background-color: #003366;">Sitemap</a>
+    </div>
+  </div>
+
+  
+  
+</body>
+</html>

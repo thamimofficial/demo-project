@@ -1,0 +1,257 @@
+* {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    background-color: white;
+ }
+ 
+ .navbar-link {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+ }
+ 
+ .navbar-link li {
+    background-color: white;
+ }
+ 
+ .navbar-link a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+ }
+ 
+ .menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+ }
+ 
+ .menu .bar {
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    cursor: pointer;
+ }
+
+.formstyle {
+    display: flex;
+}
+
+
+ .first-container{
+    display: flex;/* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Header and Navbar */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        max-width: 100px;
+        border-radius: 10px;
+    }
+    
+ 
+    
+        @media screen and (max-width: 768px) {
+            .navbar-link {
+                display: none;
+                flex-direction: column;
+                gap: 20px;
+                width: 100%;
+                background-color: #333;
+            }
+         
+            .navbar-link.show {
+                display: flex;
+            }
+         
+            .menu {
+                display: flex;
+            }
+         }
+    
+    
+    /* First Container */
+    .first-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        align-items: center;
+    }
+    
+    .text-container {
+        flex: 1;
+        padding: 20px;
+    }
+    
+    .text-container h1 {
+        font-size: 2.5rem;
+        color: #333;
+    }
+    
+    .text-container p {
+        font-size: 1rem;
+        color: #666;
+    }
+    
+    .formstyle {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .form-input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .image-container {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .responsive-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    /* Carousel */
+    .carousel-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .carousel-item-container {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    
+    /* Card Section */
+    .card-section {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 20px;
+        background-color: #f9f9f9;
+    }
+    
+    .card {
+        flex: 1 1 calc(30% - 20px);
+        max-width: calc(30% - 20px);
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    
+    .card h3 {
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+    
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+    }
+    
+    .footer h1 {
+        font-size: 1.5rem;
+    }
+    
+    .footer p {
+        font-size: 1rem;
+        color: #ccc;
+    }
+    
+    background-color:#d7d6fe;
+    padding: 30px;
+ }
+
+ .img-scroll{
+    border: solid;
+    border-color: black;
+    margin: 5px;
+    margin-bottom: 20px;
+ }
+
+ .card-container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+ .card{
+    background-color: white;
+    width: 250px;
+    height: 150px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+ }
+ .h3{
+    background-color: white;
+    color: black;
+    font-size: 30;
+ }
+
+@media screen and (max-width: 786px) {
+    .navbar-link{
+        list-style-type: none;
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        color: black;
+        list-style: none;
+        background-color: white;
+        width: 100%;
+       }
+
+       .navbar-link.show{
+        display: flex;
+       } 
+}
